@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Highlights</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Manny Pacquiao</a>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" width="40" height="40" class="me-2"> <!-- Adjust size as needed -->
+                <span>Manny Pacquiao Fanzine</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,25 +24,98 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="biography.html">Biography</a></li>
                     <li class="nav-item"><a class="nav-link active" href="career-highlights.html">Career Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="humanitarian.html">Humanitarian Works</a></li>
                     <li class="nav-item"><a class="nav-link" href="fan-tributes.html">Fan Tributes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="multimedia.html">Fight Highlights</a></li>
                 </ul>
             </div>
-        </div>
+        </div>  
     </nav>
 
     <!-- Career Highlights Section -->
     <section class="container my-5">
-        <h2>Career Highlights</h2>
-        <ul>
-            <li>2008 - Defeated Oscar De La Hoya in a historic fight.</li>
-            <li>2015 - Fought Floyd Mayweather in the "Fight of the Century."</li>
-            <li>2021 - Became a senator in the Philippines while still competing.</li>
-        </ul>
+        <h2 class="mb-4">Career Highlights</h2>
+        <div id="careerHighlightsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/career-highlights/ledwaba-fight.jpg" class="d-block w-100" alt="Pacquiao vs. Ledwaba">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>2001 - International Breakthrough</h4>
+                            <p>Pacquiao's rise to international fame began with his victory over Lehlohonolo Ledwaba, where he captured the IBF Super Bantamweight title. This win marked the start of his global boxing career, showcasing his speed and power on an international stage.</p>
+                            <video controls class="w-100">
+                                <source src="videos/career-highlights/ledwaba-fight.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/barrera-fight.jpg" class="d-block w-100" alt="Pacquiao vs. Barrera">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>2003 - Featherweight Victory Over Marco Antonio Barrera</h4>
+                            <p>In a fight that solidified his status as a boxing superstar, Pacquiao defeated Mexican legend Marco Antonio Barrera via technical knockout. This victory is often considered a turning point in Pacquiao's career, proving that he could compete against the best in the world.</p>
+                            <video controls class="w-100">
+                                <source src="videos/barrera-fight.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/de-la-hoya-fight.jpg" class="d-block w-100" alt="Pacquiao vs. De La Hoya">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>2008 - Defeated Oscar De La Hoya in a Historic Fight</h4>
+                            <p>Pacquiao moved up in weight to face Oscar De La Hoya in what was dubbed the "Dream Match." Despite being the underdog, he dominated De La Hoya, leading to the fight being stopped after eight rounds. This victory established Pacquiao as a multi-division champion and a true pound-for-pound king.</p>
+                            <video controls class="w-100">
+                                <source src="videos/de-la-hoya-fight.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/mayweather-fight.jpg" class="d-block w-100" alt="Pacquiao vs. De La Hoya">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>2015 - Fight of the Century</h4>
+                            <p>The long-awaited showdown between Manny Pacquiao and Floyd Mayweather in 2015, one of the most highly anticipated fights in boxing history.</p>
+                            <video controls class="w-100">
+                                <source src="videos/maywea-fight.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional slides can be added in the same structure -->
+            </div>
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#careerHighlightsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#careerHighlightsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer>
         <div class="container">
             <p>&copy; 2024 Manny Pacquiao Fanzine. All Rights Reserved.</p>
         </div>

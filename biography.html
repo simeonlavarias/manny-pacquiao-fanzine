@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manny Pacquiao Biography</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Manny Pacquiao</a>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" width="40" height="40" class="me-2"> <!-- Adjust size as needed -->
+                <span>Manny Pacquiao Fanzine</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,22 +24,49 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="biography.html">Biography</a></li>
                     <li class="nav-item"><a class="nav-link" href="career-highlights.html">Career Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="humanitarian.html">Humanitarian Works</a></li>
                     <li class="nav-item"><a class="nav-link" href="fan-tributes.html">Fan Tributes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="multimedia.html">Fight Highlights</a></li>
                 </ul>
             </div>
-        </div>
+        </div>  
     </nav>
 
     <!-- Biography Section -->
     <section class="container my-5">
-        <h2>Manny Pacquiao Biography</h2>
-        <p>Manny Pacquiao, born in the Philippines, rose to fame as one of boxing’s all-time greats. He is an eight-division world champion and has inspired millions with his success story.</p>
-        <p>His career started from humble beginnings, and he quickly became known for his speed, power, and resilience inside the ring. Beyond boxing, Pacquiao is a philanthropist and politician in the Philippines.</p>
+        <h2 class="text-center mb-4">Manny Pacquiao Biography</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/index/manny-pacquiao-box.webp" class="img-fluid rounded" alt="Manny Pacquiao Portrait">
+            </div>
+            <div class="col-md-8">
+                <p>Manny Pacquiao, born Emmanuel Dapidran Pacquiao on December 17, 1978, in Kibawe, Philippines, rose to fame as one of boxing’s all-time greats. Known for his speed, power, and resilience, he has captured the hearts of millions around the world and is the only boxer in history to win world titles in eight different weight divisions.</p>
+                <p>Pacquiao's journey to greatness began from humble beginnings. He grew up in poverty, often struggling to make ends meet, but his determination and love for boxing led him to pursue the sport at a young age. By the time he was 16, he had turned professional, and his career took off from there.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="container my-5">
+        <h3 class="text-center">Notable Achievements</h3>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <img src="images/index/pacquiao-victory.jpg" class="img-fluid rounded" alt="Pacquiao Victory">
+            </div>
+            <div class="col-md-8">
+                <p>Manny Pacquiao made history by becoming the first boxer to win world titles in eight different weight divisions, achieving this remarkable feat by 2016. He was inducted into the Boxing Hall of Fame in 2020 and is recognized for his significant victories, including notable wins over legends such as Oscar De La Hoya in 2008, Miguel Cotto in 2009, and Juan Manuel Márquez in 2012.</p>
+                <p>Throughout his career, he has been honored with multiple accolades, including the 2006 Ring Magazine Fighter of the Year and several Fighter of the Year awards in 2008, showcasing his dominance and skill in the sport. In 2019, he became the WBA (Super) Welterweight Champion, further solidifying his legacy in the boxing world.</p>
+            </div>
+    </section>
+
+    <!-- Personal Life and Legacy -->
+    <section class="container my-5">
+        <h3 class="text-center">Personal Life and Legacy</h3>
+        <p>Apart from boxing, Manny Pacquiao is a respected public figure in the Philippines. He is a dedicated humanitarian, using his platform to help those in need through various charitable works. In addition to his philanthropy, he has ventured into politics and served as a Senator in the Philippines from 2016 to 2022. He continues to advocate for social and economic reforms.</p>
+        <p>Pacquiao's legacy goes beyond the boxing ring. His story of perseverance and triumph continues to inspire people all over the world, proving that with hard work and determination, anything is possible.</p>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer>
         <div class="container">
             <p>&copy; 2024 Manny Pacquiao Fanzine. All Rights Reserved.</p>
         </div>

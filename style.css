@@ -3,16 +3,19 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
+    color: black; /* Set the default text color to black */
 }
 
 header {
+    position: relative; /* Set position relative to contain absolutely positioned elements */
     background-color: #000000;
     color: white;
+    overflow: hidden; /* Hide any overflow */
 }
 
 h1, h2, h3 {
     font-weight: bold;
-    color: #f44336;
+    color: #fbc12d;
 }
 
 .btn-warning {
@@ -31,4 +34,142 @@ h1, h2, h3 {
 
 #fanMessage {
     resize: none;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure it's behind the container content */
+    overflow: hidden; /* Hide any overflow */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2); /* Adjust the zoom level */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+    z-index: 1; /* Ensure it appears above the video */
+}
+
+.container {
+    position: relative;
+    z-index: 2; /* Ensure text appears above both the video and overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.95); /* Match the navbar background color */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center the footer text */
+    padding: 20px 0; /* Add some padding for better spacing */
+}
+
+/* Optional: Add a shadow effect to the footer */
+footer {
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.8); /* Subtle shadow for depth */
+}
+
+/* humanitarian.html styling */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+.parallax h2 {
+    font-size: 2.5rem;
+}
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text readability */
+}
+
+/* Navbar Styling */
+.navbar {
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent background */
+    transition: background 0.3s ease; /* Smooth transition for background changes */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.8); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Center the logo and text vertically */
+}
+
+.navbar-brand img {
+    border-radius: 50%; /* Optional: Make the logo circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the logo */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #fbc12d; /* Match the link color with the theme */
+    margin-right: 10px;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fbc02d; /* Change color slightly on hover */
+    text-decoration: underline; /* Optional: Add underline effect on hover */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: none;
+}
+
+/* Make navbar background solid when scrolling */
+.navbar.sticky-top {
+    background: rgba(0, 0, 0, 0.95);
+}
+
+/* Logo Section Styling */
+.logo-section {
+    background-color: #000; /* Black background */
+}
+
+.logo {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-top: 0; /* Remove any margin above the navbar */
+}
+
+.navbar-nav {
+    text-align: center; /* Center align the navbar items */
+}
+
+.navbar-nav .nav-link {
+    margin: 0 15px; /* Add spacing between the navbar items */
 }
