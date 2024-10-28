@@ -69,11 +69,6 @@ h1, h2, h3 {
     padding: 60px 0;
 }
 
-/* Text Area Styling */
-#fanMessage {
-    resize: none;
-}
-
 /* Video Container Styling */
 .video-container {
     position: absolute;
