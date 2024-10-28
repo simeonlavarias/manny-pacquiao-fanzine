@@ -7,14 +7,29 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-image {
+            background: url(images/pacquiao-highlights.jpg) no-repeat center top;
+            background-size: cover;
+            height: 50vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="images/logo.png" alt="Logo" width="40" height="40" class="me-2"> <!-- Adjust size as needed -->
-                <span>Manny Pacquiao Fanzine</span>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/newlogo.png" alt="PAC HUB Logo" class="navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,21 +46,30 @@
         </div>  
     </nav>
 
+    <!-- Hero Section -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 class="display-4">Career Highlights</h1>
+            <p>Relive his best moments in the ring</p>
+        </div>
+    </div>
+
     <!-- Career Highlights Section -->
     <section class="container my-5">
-        <h2 class="mb-4">Career Highlights</h2>
         <div id="careerHighlightsCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                    <div class="row">
+                    <div class="text-overlay mb-3">
+                        <h4>2001 - International Breakthrough</h4>
+                        <p>Pacquiao's rise to international fame began with his victory over Lehlohonolo Ledwaba, where he captured the IBF Super Bantamweight title. This win marked the start of his global boxing career, showcasing his speed and power on an international stage.</p>
+                    </div>
+                    <div class="row align-items-center">
                         <div class="col-md-6">
-                            <img src="images/career-highlights/ledwaba-fight.jpg" class="d-block w-100" alt="Pacquiao vs. Ledwaba">
+                            <img src="images/career-highlights/ledwaba-fight.jpg" class="d-block img-fluid custom-size" alt="Pacquiao vs. Ledwaba">
                         </div>
                         <div class="col-md-6">
-                            <h4>2001 - International Breakthrough</h4>
-                            <p>Pacquiao's rise to international fame began with his victory over Lehlohonolo Ledwaba, where he captured the IBF Super Bantamweight title. This win marked the start of his global boxing career, showcasing his speed and power on an international stage.</p>
-                            <video controls class="w-100">
+                            <video controls class="d-block img-fluid custom-size">
                                 <source src="videos/career-highlights/ledwaba-fight.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -54,15 +78,17 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <div class="row">
+                    <div class="text-overlay mb-3">
+                        <h4>2003 - Featherweight Victory Over Marco Antonio Barrera</h4>
+                        <p>In a fight that solidified his status as a boxing superstar, Pacquiao defeated Mexican legend Marco Antonio Barrera via technical knockout. This victory is often considered a turning point in Pacquiao's career, proving that he could compete against the best in the world.</p>
+                    </div>
+                    <div class="row align-items-center">
                         <div class="col-md-6">
-                            <img src="images/barrera-fight.jpg" class="d-block w-100" alt="Pacquiao vs. Barrera">
+                            <img src="images/career-highlights/barrera-fight.jpg" class="d-block img-fluid custom-size" alt="Pacquiao vs. Barrera">
                         </div>
                         <div class="col-md-6">
-                            <h4>2003 - Featherweight Victory Over Marco Antonio Barrera</h4>
-                            <p>In a fight that solidified his status as a boxing superstar, Pacquiao defeated Mexican legend Marco Antonio Barrera via technical knockout. This victory is often considered a turning point in Pacquiao's career, proving that he could compete against the best in the world.</p>
-                            <video controls class="w-100">
-                                <source src="videos/barrera-fight.mp4" type="video/mp4">
+                            <video controls class="d-block img-fluid custom-size">
+                                <source src="videos/career-highlights/barrera-fight.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -70,15 +96,17 @@
                 </div>
                 <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <div class="row">
+                    <div class="text-overlay mb-3">
+                        <h4>2008 - Defeated Oscar De La Hoya in a Historic Fight</h4>
+                        <p>Pacquiao moved up in weight to face Oscar De La Hoya in what was dubbed the "Dream Match." Despite being the underdog, he dominated De La Hoya, leading to the fight being stopped after eight rounds. This victory established Pacquiao as a multi-division champion and a true pound-for-pound king.</p>
+                    </div>
+                    <div class="row align-items-center">
                         <div class="col-md-6">
-                            <img src="images/de-la-hoya-fight.jpg" class="d-block w-100" alt="Pacquiao vs. De La Hoya">
+                            <img src="images/career-highlights/de-la-hoya-fight.jpg" class="d-block img-fluid custom-size" alt="Pacquiao vs. De La Hoya">
                         </div>
                         <div class="col-md-6">
-                            <h4>2008 - Defeated Oscar De La Hoya in a Historic Fight</h4>
-                            <p>Pacquiao moved up in weight to face Oscar De La Hoya in what was dubbed the "Dream Match." Despite being the underdog, he dominated De La Hoya, leading to the fight being stopped after eight rounds. This victory established Pacquiao as a multi-division champion and a true pound-for-pound king.</p>
-                            <video controls class="w-100">
-                                <source src="videos/de-la-hoya-fight.mp4" type="video/mp4">
+                            <video controls class="d-block img-fluid custom-size">
+                                <source src="videos/career-highlights/de-la-hoya-fight.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -86,21 +114,22 @@
                 </div>
                 <!-- Slide 4 -->
                 <div class="carousel-item">
-                    <div class="row">
+                    <div class="text-overlay mb-3">
+                        <h4>2015 - Fight of the Century</h4>
+                        <p>The bout, dubbed the "Fight of the Century," took place on May 2, 2015, at the MGM Grand Garden Arena in Las Vegas, with Pacquiao fighting bravely despite a shoulder injury that hampered his performance. Though Mayweather won by unanimous decision, Pacquiao's resilience and aggressive style earned him respect, as many fans felt he pushed the action and took more risks throughout the fight.</p>
+                    </div>
+                    <div class="row align-items-center">
                         <div class="col-md-6">
-                            <img src="images/mayweather-fight.jpg" class="d-block w-100" alt="Pacquiao vs. De La Hoya">
+                            <img src="images/career-highlights/mayweather-fight.jpg" class="d-block img-fluid custom-size" alt="Pacquiao vs. Mayweather">
                         </div>
                         <div class="col-md-6">
-                            <h4>2015 - Fight of the Century</h4>
-                            <p>The long-awaited showdown between Manny Pacquiao and Floyd Mayweather in 2015, one of the most highly anticipated fights in boxing history.</p>
-                            <video controls class="w-100">
-                                <source src="videos/maywea-fight.mp4" type="video/mp4">
+                            <video controls class="d-block img-fluid custom-size">
+                                <source src="videos/career-highlights/mayweather-fight.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                     </div>
                 </div>
-                <!-- Additional slides can be added in the same structure -->
             </div>
             <!-- Carousel controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#careerHighlightsCarousel" data-bs-slide="prev">
@@ -113,6 +142,22 @@
             </button>
         </div>
     </section>
+
+    <!-- Add custom CSS -->
+    <style>
+        .custom-size {
+            height: 350px; /* Set a fixed height for both images and videos */
+            object-fit: cover; /* Ensures the content fits nicely within the set dimensions */
+        }
+
+        .row.align-items-center > div {
+            padding-right: 10px; /* Space between the image and video */
+        }
+
+        .row.align-items-center > div:last-child {
+            padding-right: 0; /* Remove right padding from the last column */
+        }
+    </style>
 
     <!-- Footer -->
     <footer>
