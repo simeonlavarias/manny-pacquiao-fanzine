@@ -23,18 +23,28 @@
             padding: 2rem;
         }
         .fixed-height {
-            height: 380px; /* Set the desired height */
+            height: 380px;
         }
-
         .fixed-height img, .fixed-height iframe {
             height: 100%;
-            object-fit: cover; /* Keeps the aspect ratio while covering the area */
+            object-fit: cover;
         }
         .accordion-img {
-        max-width: 600px; /* Adjust the size as needed */
-        height: auto; /* Maintain aspect ratio */
+            max-width: 600px;
+            height: auto;
         }
-
+        .container h2, .container p, .card-body h5, .card-body p {
+        padding: 0.3rem 1rem; /* Extra padding on left and right for centering */
+        margin-left: auto;  
+        margin-right: auto;
+        max-width: 80%; /* Center align with restricted max width */
+        }
+        .accordion-body p {
+            padding: 0.3rem 1rem; /* Additional padding for accordion text */
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+        }
     </style>
 </head>
 <body>
@@ -59,15 +69,15 @@
         </div>  
     </nav>
 
-      <!-- Hero Section -->
-      <div class="hero-image">
+    <!-- Hero Section -->
+    <div class="hero-image">
         <div class="hero-text">
             <h1 class="display-4">Biography</h1>
             <p>Explore the legendary story of Pac-Man</p>
         </div>
     </div>
 
-        <!-- Biography Section -->
+    <!-- Biography Section -->
     <div class="container my-5">
         <div class="row">
             <div class="col-md-6">
@@ -85,7 +95,7 @@
         </div>
     </div>
 
-        <!-- Achievements Section with Accordion -->
+    <!-- Achievements Section with Accordion -->
     <div class="container my-5">
         <h2>Notable Achievements</h2>
         <div class="accordion" id="achievementsAccordion">
@@ -98,7 +108,6 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#achievementsAccordion">
                     <div class="accordion-body">
                         <p>Pacquiao is the only boxer in history to win world titles in eight different weight classes. This incredible achievement, spanning from flyweight (112 pounds) to super welterweight (154 pounds), highlights his adaptability and skill across various weight divisions.</p>
-                        <!-- Image Integration -->
                         <div class="text-center">
                             <img src="images/8-division world champion.jpg" alt="8-Division World Champion" class="img-fluid rounded my-3 accordion-img" />
                         </div>
@@ -114,7 +123,6 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#achievementsAccordion">
                     <div class="accordion-body">
                         <p>Pacquiao achieved the remarkable feat of winning world titles in four different decades (1990s, 2000s, 2010s, and 2020s). This showcases his longevity and resilience at the elite level of boxing, adapting to different eras of the sport.</p>
-                        <!-- Image Integration -->
                         <div class="text-center">
                             <img src="images/4-decades-champion.webp" alt="Champion Across Four Decades" class="img-fluid rounded my-3 accordion-img" />
                         </div>
@@ -130,7 +138,6 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#achievementsAccordion">
                     <div class="accordion-body">
                         <p>Pacquiao won the prestigious Fighter of the Year award multiple times (2006, 2008, 2009) for his impressive victories and exceptional performances in the ring. These accolades solidified his reputation as one of the greatest fighters in the sport.</p>
-                        <!-- Image Integration -->
                         <div class="text-center">
                             <img src="images/fighter.png" alt="Fighter of the Year" class="img-fluid rounded my-3 accordion-img" />
                         </div>
@@ -149,7 +156,7 @@
                     <img src="images/early-life.jpg" class="card-img-top" alt="Early Life">
                     <div class="card-body">
                         <h5 class="card-title">Early Life</h5>
-                        <p class="card-text">Manny grew up in a poor family, leaving home at a young age to support his family through odd jobs and boxing.</p>
+                        <p>Manny grew up in a poor family, leaving home at a young age to support his family through odd jobs and boxing.</p>
                     </div>
                 </div>
             </div>
@@ -158,7 +165,7 @@
                     <img src="images/political-life.jpg" class="card-img-top" alt="Political Career">
                     <div class="card-body">
                         <h5 class="card-title">Political Career</h5>
-                        <p class="card-text">Elected as a senator in the Philippines in 2016, Manny focused on issues such as anti-corruption and poverty reduction.</p>
+                        <p>Elected as a senator in the Philippines in 2016, Manny focused on policies addressing poverty, sports, and overseas workers' rights.</p>
                     </div>
                 </div>
             </div>
@@ -174,11 +181,38 @@
         </div>
     </div>
 
+    <!-- Scroll-to-Top Button -->
+    <button id="back-to-top">&#8679;</button>
+
+    <!-- JavaScript for Scroll-to-Top Functionality -->
+    <script>
+        // Show the back-to-top button when the user scrolls down
+        window.addEventListener('scroll', function() {
+            var backToTopButton = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll back to top
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Manny Pacquiao Fanzine. All Rights Reserved.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PacHub Fanzine. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

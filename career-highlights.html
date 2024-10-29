@@ -22,6 +22,12 @@
             background-color: rgba(0, 0, 0, 0.7);
             padding: 2rem;
         }
+        .text-overlay {
+            padding: 0px 150px 1px; /* Increase padding to make the text more centered */
+            color: black; /* Keep text color white for visibility */
+            /* Optional: add a margin-top for spacing from the top */
+            margin-top: 8px; 
+        }
     </style>
 </head>
 <body>
@@ -159,10 +165,34 @@
         }
     </style>
 
+    <!-- Scroll-to-Top Button -->
+    <button id="back-to-top">&#8679;</button>
+
+    <!-- JavaScript for Scroll-to-Top Functionality -->
+    <script>
+        // Show the back-to-top button when the user scrolls down
+        window.addEventListener('scroll', function() {
+            var backToTopButton = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll back to top
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Manny Pacquiao Fanzine. All Rights Reserved.</p>
+            <p>&copy; 2024 PacHub Fanzine. All Rights Reserved.</p>
         </div>
     </footer>
 
